@@ -15,3 +15,9 @@ php artisan key:generate
 ```
 php artisan migrate
 ```
+
+Wenn node modules vorhanden
+
+```
+npm install
+```
