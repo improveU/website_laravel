@@ -14,5 +14,40 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+Route::get('/', function () {
+    return view('login');
+});
+Route::get('/', function () {
+    return view('register');
+});
+Route::get('/', function () {
+    return view('paymentoverview');
+});
+Route::get('/', function () {
+    return view('payment');
+});
+Route::get('/', function () {
+    return view('courses');
+});
+Route::get('/', function () {
+    return view('product');
+});
+Route::get('/', function () {
+    return view('profile');
+});
+Route::get('/', function () {
+    return view('create');
+});
+Route::get('/', function () {
+    return view('about');
+});
+Route::get('/', function () {
+    return view('contact');
+});
+Route::get('/', function () {
+    return view('faq');
+});
+
+
