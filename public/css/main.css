@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Fontname";
+  src: url() format();
+  font-display: swap;
+} /*
+@mixin flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+*/
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px 10px rgba(0, 128, 0, 0);
+  border: solid 4px transparent;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 20px 20px rgba(0, 0, 0, 0.2509803922);
+  border: solid 4px transparent;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}/*# sourceMappingURL=main.css.map */
