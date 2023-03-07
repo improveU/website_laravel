@@ -15,37 +15,37 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('login');
 });
-Route::get('/', function () {
+Route::get('/register', function () {
     return view('register');
 });
-Route::get('/', function () {
-    return view('paymentoverview');
+Route::get('/paymentOverview', function () {
+    return view('paymentOverview');
 });
-Route::get('/', function () {
+Route::get('/payment', function () {
     return view('payment');
 });
-Route::get('/', function () {
+Route::get('/courses', function () {
     return view('courses');
 });
-Route::get('/', function () {
+Route::get('/product', function () {
     return view('product');
 });
-Route::get('/', function () {
+Route::get('/profile', function () {
     return view('profile');
 });
-Route::get('/', function () {
+Route::get('/create', function () {
     return view('create');
 });
-Route::get('/', function () {
+Route::get('/about', function () {
     return view('about');
 });
-Route::get('/', function () {
+Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/', function () {
+Route::get('/faq', function () {
     return view('faq');
 });
 
