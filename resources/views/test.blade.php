@@ -9,22 +9,23 @@
 </head>
 
 <body>
-   <x-default-layout>
-      <x-header>
+    <x-default>
 
-      </x-header>
+    </x-default>
+    <x-header>
 
+    </x-header>
 
-         content
-         <br>
-         -------
+    <br>
+    content
+    <br>
+    -------
 
-         <!-- content -->
+    <!-- content -->
 
-      <x-footer>
+    <x-footer>
 
-      </x-footer>
-   </x-default-layout>
+    </x-footer>
 </body>
 
 </html>
