@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <!--
+        Apple Login
+        Google Login
+    -->
+    <form method="POST">
+        <label for="email">Email </label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br>
+        
+        <input type="submit" value="Sign in">
+        <a href="/register">Register</a>
+
+
+    </form>
+</body>
+</html>
