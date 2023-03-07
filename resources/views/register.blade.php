@@ -11,7 +11,11 @@
 
     <form method="POST">
         <label for="username">Username</label><br>
-        <input type="text" id="username" name="username"><br>
+        <input type="text" name="username"><br>
+        <label for="firstname">First name</label><br>
+        <input type="text"  name="firstname"><br>
+        <label for="lastname">Last name</label><br>
+        <input type="text" name="lastname"><br>
         <label for="email">Email address</label><br>
         <input type="email" id="email" name="email"><br>
         <label for="password">Password</label><br>
