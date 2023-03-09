@@ -1,8 +1,14 @@
 @font-face {
-  font-family: "Fontname";
-  src: url() format();
+  font-family: "BerlinType";
+  src: url(./../font/BerlinTypeWeb-Regular.woff2) format("woff2");
   font-display: swap;
-} /*
+}
+@font-face {
+  font-family: "BerlinTypeBold";
+  src: url(./../font/BerlinTypeWeb-Bold.woff2) format("woff2");
+  font-display: swap;
+}
+/*
 @mixin flex-center {
    display: flex;
    justify-content: center;
@@ -31,6 +37,15 @@ section.splitTwo :nth-child(2) {
     display: none;
   }
 }
+body {
+  font-family: "BerlinType", sans-serif;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 ::-webkit-scrollbar {
   width: 16px;
 }
