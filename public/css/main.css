@@ -53,13 +53,44 @@ section.splitTwo :nth-child(2) {
 
 section.login {
   display: flex;
+  flex-direction: column;
+}
+section.login .loginTitel {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+}
+section.login form input[type=email] {
+  border: 2px solid #33CCCC;
+  border-radius: 6px;
+}
+section.login form input[type=password] {
+  border: 2px solid #33CCCC;
+  border-radius: 6px;
+}
+section.login form input[type=submit] {
+  border: 2px solid #FF892E;
+  color: white;
+  background-color: #FF892E;
+  border-radius: 6px;
+}
+section.login form .registerButton {
+  border: 2px solid #FF892E;
+  color: white;
+  background-color: #FF892E;
+  border-radius: 6px;
+  text-decoration: none;
+  width: 50px;
+}
+section.login form .buttonSection {
+  display: flex;
 }
 
 .titel {
   font-family: "Courier New", Courier, monospace;
   color: blue;
-}
-
-body {
-  height: 200vh;
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
 }/*# sourceMappingURL=main.css.map */

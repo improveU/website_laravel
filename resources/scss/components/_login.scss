@@ -1,12 +1,53 @@
 @use "../abstracts" as *;
 section.login{
     display: flex;
+    flex-direction: column;
+
+    .loginTitel{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+    }
+
+    form{
+        input[type=email] {
+            border: 2px solid #33CCCC;
+            border-radius: 6px;
+          }
+          input[type=password] {
+            border: 2px solid #33CCCC;
+            border-radius: 6px;
+          }
+          input[type=submit] {
+            border: 2px solid #FF892E;
+            color: white;
+            background-color: #FF892E;
+            border-radius: 6px;
+          }
+          .registerButton{
+            border: 2px solid #FF892E;
+            color: white;
+            background-color: #FF892E;
+            border-radius: 6px;
+            text-decoration: none;
+            width: 50px;
+          }
+          .buttonSection{
+            display: flex;
+          }
+
+    }
+
 }
 .titel{
     font-family: 'Courier New', Courier, monospace;
     color: blue;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
 }
 
 body{
-    height: 200vh;
+    //height: 200vh;
 }
