@@ -34,9 +34,9 @@
                 </form>
             
         </section>
-        <div>
+        <section class="picture">
 
-        </div>
+        </section>
     </section>
 </body>
 </html>

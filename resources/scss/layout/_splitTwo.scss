@@ -5,11 +5,11 @@ section.splitTwo{
    height: 100vh;
    width: 100vw;
 
-   :first-child{
+   section{
       width: 400px;
       background-color: $background;
    }
-   :nth-child(2){
+   section:last-child{
       width: calc(100% - 400px );
       background: url(https://source.unsplash.com/random) no-repeat fixed center/cover;
    }
@@ -17,10 +17,10 @@ section.splitTwo{
 
 @media only screen and (max-width: 800px) {
    section.splitTwo{
-      :first-child{
+      section{
          width: 100%;
       }
-      :nth-child(2){
+      section:last-child{
          display: none;
       }
    }
