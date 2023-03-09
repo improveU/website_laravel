@@ -66,46 +66,124 @@ body {
   background: transparent;
 }
 
+section.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+section.register .registerTitel {
+  font-size: 40px;
+}
+section.register form {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+section.register form input {
+  padding: 0;
+}
+section.register form input[type=email] {
+  border: 2px solid #33CCCC;
+  border-radius: 15px;
+  height: 30px;
+  margin-top: 1%;
+  width: 100%;
+}
+section.register form input[type=text] {
+  border: 2px solid #33CCCC;
+  border-radius: 15px;
+  height: 30px;
+  margin-top: 1%;
+  width: 100%;
+}
+section.register form input[type=password] {
+  border: 2px solid #33CCCC;
+  border-radius: 15px;
+  height: 30px;
+  margin-top: 1%;
+  width: 100%;
+}
+section.register form input[type=submit] {
+  border: 2px solid #FF892E;
+  color: white;
+  background-color: #FF892E;
+  border-radius: 10px;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  font-size: 15px;
+}
+section.register form .registerButton {
+  display: flex;
+  color: white;
+  background-color: #FF892E;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 150px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+section.register form .buttonSection {
+  display: flex;
+  margin-top: 3%;
+  justify-content: space-around;
+}
+
 section.login {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 80%;
 }
 section.login .loginTitel {
-  font-family: "Courier New", Courier, monospace;
   font-size: 40px;
+}
+section.login form {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 section.login form input[type=email] {
   border: 2px solid #33CCCC;
-  border-radius: 6px;
+  border-radius: 15px;
+  height: 30px;
+  margin-top: 1%;
+  width: 100%;
 }
 section.login form input[type=password] {
   border: 2px solid #33CCCC;
-  border-radius: 6px;
+  border-radius: 15px;
+  height: 30px;
+  margin-top: 1%;
+  width: 100%;
 }
 section.login form input[type=submit] {
   border: 2px solid #FF892E;
   color: white;
   background-color: #FF892E;
-  border-radius: 6px;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  justify-content: center;
+  font-size: 15px;
 }
 section.login form .registerButton {
-  border: 2px solid #FF892E;
+  display: flex;
   color: white;
   background-color: #FF892E;
-  border-radius: 6px;
+  border-radius: 10px;
   text-decoration: none;
-  width: 50px;
+  width: 150px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
 }
 section.login form .buttonSection {
   display: flex;
-}
-
-.titel {
-  font-family: "Courier New", Courier, monospace;
-  color: blue;
-  display: flex;
-  justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
+  margin-top: 3%;
+  justify-content: space-around;
 }/*# sourceMappingURL=main.css.map */
