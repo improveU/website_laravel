@@ -49,4 +49,17 @@ section.splitTwo :nth-child(2) {
 
 ::-webkit-scrollbar-track-piece {
   background: transparent;
+}
+
+section.login {
+  display: flex;
+}
+
+.titel {
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+}
+
+body {
+  height: 200vh;
 }/*# sourceMappingURL=main.css.map */
