@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('image_path');
             $table->unsignedInteger('views');
 
-            $table->foreignId('creator_id');
-            $table->foreignId('category_id');
+            $table->foreignIdFor(\App\Models\User::class)->constrained();
+            $table->foreignIdFor(\App\Models\Category::class)->constrained();
         });
     }
 
