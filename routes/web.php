@@ -42,8 +42,8 @@ Route::get('/create', function () {
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/contactus', function () {
+    return view('contactUs');
 });
 Route::get('/faq', function () {
     return view('faq');
