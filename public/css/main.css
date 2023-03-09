@@ -83,26 +83,12 @@ section.register form {
 section.register form input {
   padding: 0;
 }
-section.register form input[type=email] {
+section.register form .inputBox {
   border: 2px solid #33CCCC;
   border-radius: 15px;
   height: 30px;
   margin-top: 1%;
-  width: 100%;
-}
-section.register form input[type=text] {
-  border: 2px solid #33CCCC;
-  border-radius: 15px;
-  height: 30px;
-  margin-top: 1%;
-  width: 100%;
-}
-section.register form input[type=password] {
-  border: 2px solid #33CCCC;
-  border-radius: 15px;
-  height: 30px;
-  margin-top: 1%;
-  width: 100%;
+  width: calc(100% - 3px);
 }
 section.register form input[type=submit] {
   border: 2px solid #FF892E;
@@ -113,23 +99,8 @@ section.register form input[type=submit] {
   height: 30px;
   justify-content: center;
   font-size: 15px;
-}
-section.register form .registerButton {
   display: flex;
-  color: white;
-  background-color: #FF892E;
-  border-radius: 10px;
-  text-decoration: none;
-  width: 150px;
-  height: 30px;
   justify-content: center;
-  align-items: center;
-  font-size: 15px;
-}
-section.register form .buttonSection {
-  display: flex;
-  margin-top: 3%;
-  justify-content: space-around;
 }
 
 section.login {
@@ -146,14 +117,7 @@ section.login form {
   padding-left: 10%;
   padding-right: 10%;
 }
-section.login form input[type=email] {
-  border: 2px solid #33CCCC;
-  border-radius: 15px;
-  height: 30px;
-  margin-top: 1%;
-  width: 100%;
-}
-section.login form input[type=password] {
+section.login form .inputBox {
   border: 2px solid #33CCCC;
   border-radius: 15px;
   height: 30px;
@@ -186,4 +150,46 @@ section.login form .buttonSection {
   display: flex;
   margin-top: 3%;
   justify-content: space-around;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: blue;
+  height: 500px;
+}
+
+.unterContainer {
+  background-color: yellow;
+}
+
+.catch {
+  display: flex;
+  justify-content: center;
+  margin-top: 30%;
+  background-color: aqua;
+  color: red;
+  font-size: 60px;
+}
+
+.joinnowBtn {
+  display: flex;
+  background-color: orange;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 90px;
+}
+
+.centerBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.underText {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }/*# sourceMappingURL=main.css.map */
