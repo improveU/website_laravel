@@ -20,20 +20,26 @@ section.splitTwo {
   height: 100vh;
   width: 100vw;
 }
-section.splitTwo section {
+section.splitTwo div.form {
   width: 400px;
-  background-color: #ffffff;
 }
-section.splitTwo section:last-child {
+section.splitTwo div.form div.splitTwoWrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: 100%;
+}
+section.splitTwo div.picture {
   width: calc(100% - 400px);
   background: url(https://source.unsplash.com/random) no-repeat fixed center/cover;
 }
 
 @media only screen and (max-width: 800px) {
-  section.splitTwo section {
+  section.splitTwo div.form {
     width: 100%;
   }
-  section.splitTwo section:last-child {
+  section.splitTwo div.picture {
     display: none;
   }
 }
@@ -102,26 +108,12 @@ section.register form {
 section.register form input {
   padding: 0;
 }
-section.register form input[type=email] {
+section.register form .inputBox {
   border: 2px solid #33CCCC;
   border-radius: 15px;
   height: 30px;
   margin-top: 1%;
-  width: 100%;
-}
-section.register form input[type=text] {
-  border: 2px solid #33CCCC;
-  border-radius: 15px;
-  height: 30px;
-  margin-top: 1%;
-  width: 100%;
-}
-section.register form input[type=password] {
-  border: 2px solid #33CCCC;
-  border-radius: 15px;
-  height: 30px;
-  margin-top: 1%;
-  width: 100%;
+  width: calc(100% - 3px);
 }
 section.register form input[type=submit] {
   border: 2px solid #FF892E;
@@ -132,23 +124,8 @@ section.register form input[type=submit] {
   height: 30px;
   justify-content: center;
   font-size: 15px;
-}
-section.register form .registerButton {
   display: flex;
-  color: white;
-  background-color: #FF892E;
-  border-radius: 10px;
-  text-decoration: none;
-  width: 150px;
-  height: 30px;
   justify-content: center;
-  align-items: center;
-  font-size: 15px;
-}
-section.register form .buttonSection {
-  display: flex;
-  margin-top: 3%;
-  justify-content: space-around;
 }
 
 section.login {
@@ -165,14 +142,7 @@ section.login form {
   padding-left: 10%;
   padding-right: 10%;
 }
-section.login form input[type=email] {
-  border: 2px solid #33CCCC;
-  border-radius: 15px;
-  height: 30px;
-  margin-top: 1%;
-  width: 100%;
-}
-section.login form input[type=password] {
+section.login form .inputBox {
   border: 2px solid #33CCCC;
   border-radius: 15px;
   height: 30px;
@@ -205,4 +175,14 @@ section.login form .buttonSection {
   display: flex;
   margin-top: 3%;
   justify-content: space-around;
+}
+
+.titel {
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
 }/*# sourceMappingURL=main.css.map */

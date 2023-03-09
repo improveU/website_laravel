@@ -5,23 +5,30 @@ section.splitTwo{
    height: 100vh;
    width: 100vw;
 
-   section{
+   div.form{
+
       width: 400px;
-      background-color: $background;
-      
+
+      div.splitTwoWrapper{
+         background-color: $background;
+         display: flex;
+         flex-direction: column;
+         padding: 25px;
+         width: 100%;
+      }
    }
-   section:last-child{
-      width: calc(100% - 400px );
+   div.picture{
+      width: calc(100% - 400px);
       background: url(https://source.unsplash.com/random) no-repeat fixed center/cover;
    }
 }
 
 @media only screen and (max-width: 800px) {
    section.splitTwo{
-      section{
+      div.form{
          width: 100%;
       }
-      section:last-child{
+      div.picture{
          display: none;
       }
    }
