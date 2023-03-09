@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id()->primary();
+            $table->id();
             $table->string('first_name');
             $table->string('last_name');
             $table->string('username');
@@ -21,8 +21,7 @@ return new class extends Migration
             $table->string('profile_picture_path');
             $table->rememberToken();
             $table->timestamps();
-            $table->index('subscription_id');
-            $table->foreign('subscription_id')->references('id')->on('subscriptions')->onDelete('cascade');
+            $table->foreignId('subscription_id');
 
         });
     }
@@ -30,11 +29,8 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    public function down(Blueprint $table): void
+    public function down(): void
     {
-        $table->dropForeign('lists_user_id_foreign');
-        $table->dropIndex('lists_user_id_index');
-        $table->dropColumn('user_id');
         Schema::dropIfExists('users');
     }
 };

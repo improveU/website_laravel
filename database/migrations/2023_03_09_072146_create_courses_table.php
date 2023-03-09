@@ -20,27 +20,16 @@ return new class extends Migration
             $table->string('image_path');
             $table->unsignedInteger('views');
 
-            $table->index('creator_id');
-            $table->foreign('creator_id')->references('id')->on('users')->onDelete('cascade');
-
-            $table->index('category_id');
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
-
+            $table->foreignId('creator_id');
+            $table->foreignId('category_id');
         });
     }
 
     /**
      * Reverse the migrations.
      */
-    public function down(Blueprint $table): void
+    public function down(): void
     {
-        $table->dropForeign('lists_creator_id_foreign');
-        $table->dropIndex('lists_creator_id_index');
-        $table->dropColumn('creator_id');
-
-        $table->dropForeign('lists_category_id_foreign');
-        $table->dropIndex('lists_category_id_index');
-        $table->dropColumn('category_id');
         Schema::dropIfExists('courses');
     }
 };
