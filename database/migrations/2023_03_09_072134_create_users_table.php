@@ -21,15 +21,20 @@ return new class extends Migration
             $table->string('profile_picture_path');
             $table->rememberToken();
             $table->timestamps();
-            $table->foreignIdFor(subscriptions::id);
+            $table->index('subscription_id');
+            $table->foreign('subscription_id')->references('id')->on('subscriptions')->onDelete('cascade');
+
         });
     }
 
     /**
      * Reverse the migrations.
      */
-    public function down(): void
+    public function down(Blueprint $table): void
     {
+        $table->dropForeign('lists_user_id_foreign');
+        $table->dropIndex('lists_user_id_index');
+        $table->dropColumn('user_id');
         Schema::dropIfExists('users');
     }
 };
