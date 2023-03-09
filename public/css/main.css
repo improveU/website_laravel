@@ -177,6 +177,7 @@ section.login form .buttonSection {
   justify-content: space-around;
 }
 
+<<<<<<< HEAD
 .titel {
   font-family: "Courier New", Courier, monospace;
   color: blue;
@@ -185,4 +186,46 @@ section.login form .buttonSection {
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
+=======
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: blue;
+  height: 500px;
+}
+
+.unterContainer {
+  background-color: yellow;
+}
+
+.catch {
+  display: flex;
+  justify-content: center;
+  margin-top: 30%;
+  background-color: aqua;
+  color: red;
+  font-size: 60px;
+}
+
+.joinnowBtn {
+  display: flex;
+  background-color: orange;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 90px;
+}
+
+.centerBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.underText {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+>>>>>>> 0b35d2184d62fd190ae1468b95aa392f1d8f0b63
 }/*# sourceMappingURL=main.css.map */
