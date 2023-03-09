@@ -3,9 +3,9 @@
 @use './abstracts/mixin';
 
 @use './layout/default';
-@use './layout/twoSplit';
+@use './layout/splitTwo';
 
-
+@use './components/root';
 @use './components/scrollbar';
 @use './components/loader.scss';
 @use './components/register';

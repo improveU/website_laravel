@@ -8,22 +8,35 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="titel">Login</h1>
-
-    <!--
-        Apple Login
-        Google Login
-    -->
-    <form method="POST">
-        <label for="email">Email </label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password"><br>
+    <section class="splitTwo">
+        <section class="login">
+            <h1 class="loginTitel">Login</h1>
         
-        <input type="submit" value="Sign in">
-        <a href="/register">Register</a>
+            <!--
+                Apple Login
+                Google Login
+            -->
+            
+                <form method="POST">
+                    <label for="email">Email </label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password"><br>
+                
+                    <div class="buttonSection">
+                        <input type="submit" value="Sign in">
+                        <a href="/register" class="registerButton">Register</a>
 
+                    </div>
+                    
+        
+        
+                </form>
+            
+        </section>
+        <div>
 
-    </form>
+        </div>
+    </section>
 </body>
 </html>
