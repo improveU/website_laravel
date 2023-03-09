@@ -9,6 +9,7 @@
 </head>
 <body>
     <section class="splitTwo">
+        <x-logo></x-logo>
         <section class="login">
             <h1 class="loginTitel">Login</h1>
         

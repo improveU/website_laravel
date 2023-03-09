@@ -46,6 +46,25 @@ body {
   width: 100%;
 }
 
+section.logo {
+  display: flex;
+  height: auto;
+}
+section.logo .logoWrapper {
+  height: 55px;
+  width: 70px;
+  background-image: url(./../svg/logo.svg);
+  background-size: 100%;
+  border-radius: 8px;
+}
+section.logo .logoTitle {
+  padding-top: 12px;
+  padding-left: 15px;
+  font-family: "BerlinTypeBold", sans-serif;
+  font-size: 26px;
+  color: #05445e;
+}
+
 ::-webkit-scrollbar {
   width: 16px;
 }
