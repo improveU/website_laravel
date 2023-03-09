@@ -51,12 +51,15 @@ section.login{
             margin-top: 3%;
             justify-content: space-around;
           }
-
     }
 
 }
-
-
-body{
-    //height: 200vh;
+.titel{
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
 }
