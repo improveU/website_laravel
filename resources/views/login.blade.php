@@ -19,7 +19,7 @@
             
                 <form method="POST">
                     <label for="email" style="margin-top: 1%">Email </label><br>
-                    <input type="email" id="email" name="email"><br>
+                    <input type="email" id="email" name="email" class="inputBox"><br>
                     <label for="password" style="margin-top: 1%">Password</label><br>
                     <input type="password" id="password" name="password"><br>
                 

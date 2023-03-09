@@ -18,30 +18,14 @@ section.register{
         input{
             padding: 0;
         }
-
-        input[type=email] {
+        .inputBox{
             border: 2px solid #33CCCC;
             border-radius: 15px;
             height: 30px;
             margin-top: 1%;
             width: calc(100%-3px);
-          }
-
-        input[type=text] {
-            border: 2px solid #33CCCC;
-            border-radius: 15px;
-            height: 30px;
-            margin-top: 1%;
-            width: calc(100%-3px);
-          }
-
-          input[type=password] {
-            border: 2px solid #33CCCC;
-            border-radius: 15px;
-            height: 30px;
-            margin-top: 1%;
-            width: calc(100%-3px);
-          }
+        }
+        
           input[type=submit] {
             border: 2px solid #FF892E;
             color: white;
@@ -55,23 +39,8 @@ section.register{
             justify-content: center;
         
           }
-          .registerButton{
-            display: flex;
-            color: white;
-            background-color: #FF892E;
-            border-radius: 10px;
-            text-decoration: none;
-            width: 150px;
-            height: 30px;
-            justify-content: center;
-            align-items: center;
-            font-size: 15px;
-          }
-          .buttonSection{
-            display: flex;
-            margin-top: 3%;
-            justify-content: space-around;
-          }
+          
+          
 
     }
 
