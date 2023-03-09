@@ -8,6 +8,7 @@ section.splitTwo{
    section{
       width: 400px;
       background-color: $background;
+      
    }
    section:last-child{
       width: calc(100% - 400px );

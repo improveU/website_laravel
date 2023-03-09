@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +11,23 @@
 </head>
 <body>
     <section class="splitTwo">
-        <x-logo></x-logo>
+        div
+            logo
+
+            title = var xyz
+
+            form
+
+
+
+
         <section class="login">
+        
+            <x-logo/>
+            <x-twoSplitTitle :title="$title = 'Login'" />
+            
+
+            
             <h1 class="loginTitel">Login</h1>
         
             <!--
@@ -19,7 +36,7 @@
             -->
             
                 <form method="POST">
-                    <label for="email" style="margin-top: 1%">Email </label><br>
+                    <label for="email" style="margin-top: 1%"><strong>Email<strong> </label><br>
                     <input type="email" id="email" name="email" class="inputBox"><br>
                     <label for="password" style="margin-top: 1%">Password</label><br>
                     <input type="password" id="password" name="password"><br>
