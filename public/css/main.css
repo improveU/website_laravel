@@ -20,20 +20,20 @@ section.splitTwo {
   height: 100vh;
   width: 100vw;
 }
-section.splitTwo :first-child {
+section.splitTwo section {
   width: 400px;
   background-color: #ffffff;
 }
-section.splitTwo :nth-child(2) {
+section.splitTwo section:last-child {
   width: calc(100% - 400px);
   background: url(https://source.unsplash.com/random) no-repeat fixed center/cover;
 }
 
 @media only screen and (max-width: 800px) {
-  section.splitTwo :first-child {
+  section.splitTwo section {
     width: 100%;
   }
-  section.splitTwo :nth-child(2) {
+  section.splitTwo section:last-child {
     display: none;
   }
 }
