@@ -21,7 +21,8 @@ return new class extends Migration
             $table->string('profile_picture_path');
             $table->rememberToken();
             $table->timestamps();
-            $table->foreignId('subscription_id');
+            $table->foreignIdFor(\App\Models\Subscription::class)->constrained();
+
 
         });
     }

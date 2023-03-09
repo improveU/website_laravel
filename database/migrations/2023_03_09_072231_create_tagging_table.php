@@ -14,9 +14,8 @@ return new class extends Migration
         Schema::create('tagging', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('course_id');
-            $table->foreignId('tag_id');
-
+            $table->foreignIdFor(\App\Models\Course::class)->constrained();
+            $table->foreignIdFor(\App\Models\Tag::class)->constrained();
         });
     }
 
