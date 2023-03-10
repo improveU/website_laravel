@@ -48,7 +48,14 @@ Route::get('/contactus', function () {
 Route::get('/faq', function () {
     return view('faq');
 });
+
+
+
 Route::get('/test', function () {
     return view('test');
 });
+Route::get('/form', function () {
+    return view('form');
+});
+
 

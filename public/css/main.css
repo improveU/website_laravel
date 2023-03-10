@@ -46,10 +46,13 @@ section.splitTwo div.picture {
 body {
   font-family: "BerlinType", sans-serif;
   font-size: 1.1rem;
-  margin: 0;
-  padding: 0;
   height: 100%;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: overlay;
+  background-color: #ffffff;
+  color: #1D212F;
 }
 
 section.logo {
@@ -69,6 +72,162 @@ section.logo .logoTitle {
   font-family: "BerlinTypeBold", sans-serif;
   font-size: 26px;
   color: #05445e;
+}
+
+button {
+  font-family: "BerlinTypeBold", sans-serif;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 100px;
+  height: 44px;
+  padding: 8px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 0px 20px -20px;
+  cursor: pointer;
+  background-color: #FF892E;
+  color: white;
+  font-size: 1.1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+button.discard {
+  background-color: #E0E1E5;
+  color: #767882;
+}
+button.danger {
+  background-color: #E64B3B;
+}
+button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0 0);
+  box-shadow: 0px 0px 20px -18px;
+  transition: 2.5s ease-in-out;
+}
+button:active {
+  transform: scale(0.9);
+  transition: 0.1s ease;
+}
+button:focus {
+  transition: 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  outline: 3px solid #E8EDEB;
+}
+
+div.container,
+div.c {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  padding: 25px;
+  border: solid 2.5px #E0E1E5;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 100px 50px;
+}
+div.container.teal,
+div.c.teal {
+  background-color: #E5F6F8;
+}
+div.container.orange,
+div.c.orange {
+  background-color: #FFF4EE;
+}
+
+.credit-card-info--form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input_container {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input_label {
+  font-size: 10px;
+  color: #8B8E98;
+  font-weight: 600;
+}
+
+.input_field {
+  background-color: white;
+  width: auto;
+  height: 40px;
+  padding: 0 0 0 16px;
+  border: solid 2.5px #B4E8EE;
+  border-radius: 12px;
+  font-family: "BerlinType";
+  font-size: 1.1rem;
+}
+
+.input_field:focus {
+  border: solid 2.5px #B4E8EE;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 100px 0px;
+  background-color: transparent;
+  background-color: white;
+  transition: 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  outline: 3px solid #E8EDEB;
+}
+
+.file-drop-area {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  max-width: 100%;
+  border: solid 2.5px #B4E8EE;
+  border-radius: 12px;
+  background-color: white;
+}
+.file-drop-area.is-active {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.file-drop-area .cover-svg {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.file-drop-area .cover-svg img {
+  height: 80px;
+  width: 80px;
+}
+.file-drop-area .fake-btn {
+  flex-shrink: 0;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: solid 2.5px #FFC2AF;
+  border-radius: 12px;
+  background-color: white;
+}
+.file-drop-area .file-msg {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-drop-area .file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.file-drop-area .file-input:focus {
+  transition: 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  outline: 3px solid #E8EDEB;
 }
 
 ::-webkit-scrollbar {
@@ -177,7 +336,6 @@ section.login form .buttonSection {
   justify-content: space-around;
 }
 
-<<<<<<< HEAD
 .titel {
   font-family: "Courier New", Courier, monospace;
   color: blue;
@@ -186,7 +344,8 @@ section.login form .buttonSection {
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
-=======
+}
+
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -227,5 +386,4 @@ section.login form .buttonSection {
   display: flex;
   justify-content: center;
   margin-top: 5%;
->>>>>>> 0b35d2184d62fd190ae1468b95aa392f1d8f0b63
 }/*# sourceMappingURL=main.css.map */
